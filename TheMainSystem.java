@@ -9,10 +9,14 @@ public class TheMainSystem {
 	public static void main(String[] args) {
 
 		Scanner console = new Scanner(System.in);
+		Student student1 = new Student("declan ", 1326372 , 12);
 		String choice;
+		String choice1;
+		String choice2;
+		
 		boolean loop = true;
 
-		System.out.println("welcome to my skibbity land!!");
+		System.out.println("welcome to my skibbity school!!");
 		System.out.println("please pick what you want to do");
 		System.out.println("___________________________________________________________________");
 		System.out.println("1. Do a backflip");
@@ -23,6 +27,7 @@ public class TheMainSystem {
 		System.out.println("6. Exit");
 		System.out.println("___________________________________________________________________");
 
+		
 
 		while (loop==true) {
 
@@ -32,7 +37,7 @@ public class TheMainSystem {
 
 			}
 			else if (choice.equals("2")) {
-				System.out.println("Student has been added");
+				System.out.println("Student "+student1.getName()+"has been added");
 
 			}
 			else if (choice.equals("3")) {
@@ -56,6 +61,8 @@ public class TheMainSystem {
 				System.out.println("That is not a number you can choose");
 			}
 		}
+		
+		//student1.getName(); is equal to the String value of "declan"
 
 
 
